@@ -22,7 +22,7 @@ script_name=$(basename -- "$0")
 project_dir=$(cd -- "$(dirname -- "$0")/.." &>/dev/null && pwd) || exit
 export DISPLAY=:99
 subl_packages_dir=~/.config/sublime-text-3/Packages
-subl_package_dir=$subl_packages_dir/SublimeSuperSettings
+subl_package_dir=$subl_packages_dir/SublimeUberSettings
 exit_status=0
 
 while getopts :h option; do

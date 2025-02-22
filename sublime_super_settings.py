@@ -1,6 +1,6 @@
 """
-SublimeSuperSettings
-https://github.com/TobyGiacometti/SublimeSuperSettings
+SublimeUberSettings
+https://github.com/mariusz-kowalski/SublimeUberSettings
 Copyright (c) 2017-2022 Toby Giacometti and contributors
 Apache License 2.0
 """
@@ -56,14 +56,14 @@ def file_settings(file):
     if not os.path.isfile(file):
         return {}
 
-    print("SublimeSuperSettings: loading settings from " + file)
+    print("SublimeUberSettings: loading settings from " + file)
 
     with open(file, encoding="utf-8") as file_object:
         try:
             return json.load(file_object)
         except ValueError as exception:
             print(
-                "SublimeSuperSettings: error loading settings from "
+                "SublimeUberSettings: error loading settings from "
                 + file_object.name
                 + ": "
                 + repr(exception)
@@ -133,7 +133,7 @@ def apply_settings(view):
     configured_views.append(view.id())
 
 
-class SublimeSuperSettingsListener(sublime_plugin.EventListener):
+class SublimeUberSettingsListener(sublime_plugin.EventListener):
     """https://www.sublimetext.com/docs/3/api_reference.html"""
 
     def on_load(self, view):  # pylint: disable=no-self-use

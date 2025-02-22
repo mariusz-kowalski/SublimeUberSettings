@@ -7,7 +7,7 @@ import sublime
 import unittesting
 
 
-class TestSublimeSuperSettings(unittesting.DeferrableTestCase):
+class TestSublimeUberSettings(unittesting.DeferrableTestCase):
     @classmethod
     def setUpClass(cls):
         # If we store the test settings files in a directory, they are
@@ -43,35 +43,35 @@ class TestSublimeSuperSettings(unittesting.DeferrableTestCase):
         )
 
     def test_general_root_dir_settings(self):
-        setting = "super_settings_test_root_general"
+        setting = "Uber_settings_test_root_general"
         self.assertEqual(self.root_py_view.settings().get(setting), True)
         self.assertEqual(self.root_txt_view.settings().get(setting), True)
         self.assertEqual(self.sub_py_view.settings().get(setting), True)
         self.assertEqual(self.sub_txt_view.settings().get(setting), True)
 
     def test_syntax_specific_root_dir_settings(self):
-        setting = "super_settings_test_root_txt"
+        setting = "Uber_settings_test_root_txt"
         self.assertEqual(self.root_py_view.settings().get(setting), None)
         self.assertEqual(self.root_txt_view.settings().get(setting), True)
         self.assertEqual(self.sub_py_view.settings().get(setting), None)
         self.assertEqual(self.sub_txt_view.settings().get(setting), True)
 
     def test_general_sub_dir_settings(self):
-        setting = "super_settings_test_sub_general"
+        setting = "Uber_settings_test_sub_general"
         self.assertEqual(self.root_py_view.settings().get(setting), None)
         self.assertEqual(self.root_txt_view.settings().get(setting), None)
         self.assertEqual(self.sub_py_view.settings().get(setting), True)
         self.assertEqual(self.sub_txt_view.settings().get(setting), True)
 
     def test_syntax_specific_sub_dir_settings(self):
-        setting = "super_settings_test_sub_txt"
+        setting = "Uber_settings_test_sub_txt"
         self.assertEqual(self.root_py_view.settings().get(setting), None)
         self.assertEqual(self.root_txt_view.settings().get(setting), None)
         self.assertEqual(self.sub_py_view.settings().get(setting), None)
         self.assertEqual(self.sub_txt_view.settings().get(setting), True)
 
     def test_settings_override(self):
-        setting = "super_settings_test_override"
+        setting = "Uber_settings_test_override"
         self.assertEqual(self.root_py_view.settings().get(setting), False)
         self.assertEqual(self.root_txt_view.settings().get(setting), False)
         self.assertEqual(self.sub_py_view.settings().get(setting), True)

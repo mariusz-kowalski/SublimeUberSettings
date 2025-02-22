@@ -1,4 +1,4 @@
-# SublimeSuperSettings
+# SublimeUberSettings
 
 A [Sublime Text][1] package that enables per-directory configuration.
 
@@ -18,7 +18,7 @@ A [Sublime Text][1] package that enables per-directory configuration.
 
 ## Why?
 
-Sublime Text can be configured easily without having to go through a dozen different menus and windows: Just adjust a single JSON file and be done with it. However, out of the box, configuration is limited to one global settings file and a single settings file per project. On top of that, syntax-specific settings for a project cannot be adjusted. SublimeSuperSettings takes care of all these limitations by enabling per-directory configuration.
+Sublime Text can be configured easily without having to go through a dozen different menus and windows: Just adjust a single JSON file and be done with it. However, out of the box, configuration is limited to one global settings file and a single settings file per project. On top of that, syntax-specific settings for a project cannot be adjusted. SublimeUberSettings takes care of all these limitations by enabling per-directory configuration.
 
 ## Features
 
@@ -28,21 +28,21 @@ Sublime Text can be configured easily without having to go through a dozen diffe
 
 ## Requirements
 
-SublimeSuperSettings works with Sublime Text 3.
+SublimeUberSettings works with Sublime Text 3.
 
 ## Installation
 
 ### Package Control
 
-Installing SublimeSuperSettings through [Package Control][2] is recommended. Please note that the package you need to install is called `SuperSettings`. Check out the Package Control [installation instructions][3] if you need help.
+Installing SublimeUberSettings through [Package Control][2] is recommended. Please note that the package you need to install is called `UberSettings`. Check out the Package Control [installation instructions][3] if you need help.
 
 ### Manual
 
 Following steps can be used if you prefer to manually manage your Sublime Text packages:
 
-1. [Download][4] SublimeSuperSettings.
+1. [Download][4] SublimeUberSettings.
 2. Extract the downloaded archive.
-3. Rename the extracted directory to `SublimeSuperSettings`.
+3. Rename the extracted directory to `SublimeUberSettings`.
 4. Move the directory to your Sublime Text packages directory. You can access the Sublime Text packages directory by opening the command palette *(Tools → Command Palette)* and entering `Browse Packages`.
 
 ## Usage
@@ -64,7 +64,7 @@ The syntax-specific settings files follow the same discovery and merge logic as 
 
 ### Settings File Format
 
-The settings files for SublimeSuperSettings have the same format as the default Sublime Text settings files. For example:
+The settings files for SublimeUberSettings have the same format as the default Sublime Text settings files. For example:
 
 ```json
 {
@@ -97,4 +97,4 @@ example/
 [1]: https://www.sublimetext.com
 [2]: https://packagecontrol.io
 [3]: https://packagecontrol.io/installation
-[4]: https://github.com/TobyGiacometti/SublimeSuperSettings/releases
+[4]: https://github.com/mariusz-kowalski/SublimeUberSettings/releases
